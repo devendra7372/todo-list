@@ -1,3 +1,18 @@
+/* Navbar styles */
+.navbar {
+    width: 100%;
+    background: #007bff;
+    color: #fff;
+    padding: 18px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    margin-bottom: 30px;
+}
+.navbar-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+}
 /* # Animation for adding/removing items */
 .fade-in {
     animation: fadeIn 0.4s;
