@@ -40,10 +40,19 @@
                 delBtn.className = 'delete-btn';
                 delBtn.addEventListener('click', function(e) {
                     e.stopPropagation();
-                    li.remove();
+                    // Fade out animation before removing
+                    li.classList.add('fade-out');
+                    setTimeout(() => {
+                        li.remove();
+                    }, 400);
                 });
                 li.appendChild(delBtn);
+                // Add fade-in animation
+                li.classList.add('fade-in');
                 list.appendChild(li);
+                setTimeout(() => {
+                    li.classList.remove('fade-in');
+                }, 400);
                 input.value = '';
             }
         });
